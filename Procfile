@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn techcity.wsgi  
+web: python manage.py migrate && gunicorn digitaltouch.wsgi  
