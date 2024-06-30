@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn digitaltouch.wsgi  
+web: gunicorn digitaltouch.wsgi  --log-file -
