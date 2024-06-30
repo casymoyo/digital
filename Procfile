@@ -1,1 +1,1 @@
-web: gunicorn digitaltouch.wsgi  --log-file -
+web: gunicorn 'digitaltouch.wsgi' --log-file -
