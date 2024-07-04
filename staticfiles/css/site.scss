@@ -1,0 +1,89 @@
+/*------------------------------------------------------------------
+Project:  Digital Touch
+Version:  1
+-------------------------------------------------------------------*/
+
+$priamary-color-1: #57b846;
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato/Lato-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Lato-Bold;
+    src: url('../fonts/Lato/Lato-Bold.ttf'); 
+  }
+
+body{
+    font-family: lato-Regular;
+}
+
+nav{
+  height: 56px;
+  a{
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: lowercase;
+    color:#333;
+  }
+  .nav-btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+    background: #fff;
+  }
+  .nav-btn:hover{
+    background: #f0f0f0;
+  }
+  .social-icons{
+    a:hover{
+      text-decoration: none;
+      color:#333;
+    }
+  }
+  .site-logo{
+    img{
+      height:38px;
+      padding: .5rem .75rem;
+      transition: all .15s ease-in-out;
+    }
+  }
+}
+@media (max-width:1200px ) {
+  .center-navigation,
+  .social-icons{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    justify-content: end;
+  }
+}
+@media (min-width:1200px ) {
+  .menu{
+    display: none;
+  }
+}
