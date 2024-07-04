@@ -4,6 +4,8 @@ Version:  1
 -------------------------------------------------------------------*/
 
 $priamary-color-1: #57b846;
+$priamary-color-2: #333;
+$priamary-color-3: #5e5e5e;
 
 @font-face {
     font-family: Poppins-Regular;
@@ -86,4 +88,13 @@ nav{
   .menu{
     display: none;
   }
+}
+
+.hero{
+  // color: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: $priamary-color-2;
 }

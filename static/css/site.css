@@ -75,4 +75,10 @@ nav .site-logo img {
   .menu {
     display: none;
   }
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=site.css.map */
