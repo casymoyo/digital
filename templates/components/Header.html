@@ -1,0 +1,57 @@
+{% load static %}
+{% block content %}
+    <nav data-aos="zoom-in" class="fill d-flex border fixed-top align-items-center w-100">
+        <div class="site-logo w-25 mt-2 px-4">
+            <ul class='list-unstyled d-flex '>
+                <li>
+                    <a href='' aria-label='digital touch logo'>
+                    <img src="{% static 'images/icons/logo-no-back.png'%}" alt="logo">
+                </li>
+            </a>
+            </ul>
+        </div>
+        <div class="center-navigation text-center mt-2 w-50">
+            <ul class='list-unstyled d-flex justify-content-center'>
+                <li>
+                    <button type='button' class='nav-btn'>
+                        products
+                    </button>
+                </li>
+                <li>
+                    <button type='button' class='nav-btn'>
+                        portifolio
+                    </button>
+                </li>
+                <li>
+                    <button type='button' class='nav-btn'>
+                        company
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="social-icons mt-2 w-25 px-4">
+            <ul class='list-unstyled d-flex justify-content-end'>
+                <li>
+                    <a href='' class='nav-btn'>
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class='mx-2'>
+                    <a href='' class='nav-btn'>
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href='' class='nav-btn'>
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class='w-75 menu px-4'>
+            <button class='nav-btn fw-bold'>
+                <span class='fw-bold'>Menu</span>
+            </button>
+        </div>
+    </nav>
+{% endblock content%}

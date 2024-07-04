@@ -14,10 +14,7 @@ SECRET_KEY = "django-insecure-r_(8j-diw^31im!4int*44tid0p-)6q+mfl-vtriy^jbhu&mxk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-2153.up.railway.app', 'www.digitaltouch.co.zw']
-
-#
-# Application definition
+ALLOWED_HOSTS = ['127.0.0.1', 'www.digitaltouch.co.zw']
 
 DJANGO_APPS = [
     "django.contrib.admin",
