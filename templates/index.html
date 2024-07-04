@@ -23,4 +23,143 @@
             </div>
         </div>
     {% endblock hero%}
+        <section id="products" class="products-page bg-dark text-light" data-page="home">
+            <div class="container">
+                <div class="content d-flex flex-column py-3" data-aos="fade-right">
+                    <div class="title h3 py-3 text-center">Produts & Services</div>
+                    <div class="row">
+                        <div class="col" >
+                            <a href="#soft">
+                                <div class="card " data-page="soft">
+                                        <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
+                                            <i class="bi bi-code py-2"></i>
+                                            <h4 class="text-center">Software Development</h4>
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col py-3">
+                            <a href="#mob">
+                                <div class="card" data-page="mob">
+                                    <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
+                                        <i class="bi bi-phone code py-2"></i>
+                                        <h4 class="text-center">Mobile Application Development</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#web">
+                                <div class="card" data-page="web">
+                                        <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
+                                            <i class="bi bi-code  code py-2"></i>
+                                            <h4 class="text-center">Web Development</h4>
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col" >
+                            <a href="#marketing">
+                                <div class="card " data-page="marketing">
+                                        <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
+                                            <i class="bi bi-code py-2"></i>
+                                            <h4 class="text-center">Digital Marketing And Hosting Services</h4>
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- onclick data -->
+                <!-- software development data -->
+                <div id="soft" data-aos="fade-down" class="py-3">
+                    <div class="container">
+                        <div class="h3 text-center py-3">
+                            <i class="bi bi-code"></i>Software Development
+                        </div>
+                        <div class="card bg-dark text-light">
+                            <div class="card-body">
+
+                            </div>
+                            <div class="py-5 text-center">
+                                <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Mobile application">Get A Qoute</a>
+                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile app development data -->
+                <div id="mob" data-aos="fade-down" class="py-3">
+                    <div class="container">
+                        <div class="h3 text-center py-3">
+                            <i class="bi bi-phone"></i>Mobile App Development
+                        </div>
+                        <div class="card bg-dark text-light">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    We offer a full cycle of application design, integration and management services. 
+                                    Whether it is a consumer oriented app or a transformative enterprise-class solution, 
+                                    the company leads the entire mobile app development process from ideation and concept to delivery, 
+                                    and to ongoing ongoing support.
+                                </div>
+                            </div>
+                            <div class="py-5 text-center">
+                                <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Mobile application">Get A Qoute</a>
+                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>
+                            </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- web devvelopment -->
+                <div id="web" data-aos="fade-right" class="py-3">
+                    <div class="container">
+                        <div class="h3 text-center py-3">
+                            <i class="bi bi-code"></i>Web Development
+                        </div>
+                        <div class="card bg-dark text-light">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <div class="card-text">
+                                We offer a full cycle of application design, integration and management services. 
+                                Whether it is a consumer oriented app or a transformative enterprise-class solution, 
+                                the company leads the entire mobile app development process from ideation and concept to delivery, 
+                                and to ongoing ongoing support.
+                                </div>
+                            </div>
+                            <div class="py-5 text-center">
+                                    <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Web Application or Site">Get A Qoute</a>
+                                    <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>    
+                                </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- digital maarketing data -->
+                <div id="marketing" data-aos="fade-right" class="py-3">
+                    <div class="container">
+                        <div class="h3 text-center py-3">
+                            <i class="bi bi-code"></i>Digital Markerting
+                        </div>
+                        <div class="card bg-dark text-light">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <div class="card-text">
+                                    digital Marketing
+                                </div>
+                            </div>
+                            <div class="py-5 text-center">
+                                <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Web Application or Site">Get A Qoute</a>
+                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>    
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    </section>
+    {% block main%}
+
+    {% endblock main%}
 {% endblock content%}
