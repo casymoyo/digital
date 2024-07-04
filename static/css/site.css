@@ -24,7 +24,7 @@ body {
 
 .social-media {
   position: fixed;
-  bottom: 0%;
+  bottom: 5%;
 }
 .social-media ul {
   list-style: none;
