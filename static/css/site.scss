@@ -6,6 +6,7 @@ Version:  1
 $priamary-color-1: #57b846;
 $priamary-color-2: #333;
 $priamary-color-3: #5e5e5e;
+$priamary-color-4: #f3dc0a;
 
 @font-face {
     font-family: Poppins-Regular;
@@ -29,6 +30,21 @@ $priamary-color-3: #5e5e5e;
 
 body{
     font-family: lato-Regular;
+}
+
+.social-media{
+  position: fixed;
+  top: 35%;
+  ul{
+      list-style: none;
+      li{
+          padding: 9px 0px;
+      }
+      li a{
+          text-decoration: none;
+          color: $priamary-color-2;
+      }
+  }
 }
 
 nav{
@@ -79,13 +95,15 @@ nav{
   .social-icons{
     display: none;
   }
-  .menu{
+  .menu,
+  .social-media{
     display: flex;
     justify-content: end;
   }
 }
 @media (min-width:1200px ) {
-  .menu{
+  .menu,
+  .social-media{
     display: none;
   }
 }

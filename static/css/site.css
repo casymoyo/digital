@@ -22,6 +22,21 @@ body {
   font-family: lato-Regular;
 }
 
+.social-media {
+  position: fixed;
+  top: 35%;
+}
+.social-media ul {
+  list-style: none;
+}
+.social-media ul li {
+  padding: 9px 0px;
+}
+.social-media ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
 nav {
   height: 56px;
 }
@@ -66,13 +81,15 @@ nav .site-logo img {
   .social-icons {
     display: none;
   }
-  .menu {
+  .menu,
+  .social-media {
     display: flex;
     justify-content: end;
   }
 }
 @media (min-width: 1200px) {
-  .menu {
+  .menu,
+  .social-media {
     display: none;
   }
 }
