@@ -1,10 +1,53 @@
 {% extends 'base.html'%}
 {% block content %}
+
+    {% block menu %}
+        <div class="responsive-menu hidden" data-aos="fade-in" id="responsive">
+            <div class='d-flex justify-content-end'>
+                <span class="btn font-weight-bold" id="close-btn">X</span>
+            </div>
+            <ul class='list-unstyled w-100 px-3'>
+                <li>
+                    <span  class='menu-link'>
+                        Products
+                    </span>
+                    <small>
+                        <i class="fa fa-chevron-right"></i>
+                    </small>
+                </li>
+                <li>
+                    <span class='menu-link'>
+                        Portifolio
+                    </span>
+                    <small>
+                        <i class="fa fa-chevron-right"></i>
+                    </small>
+                </li>
+                <li>
+                    <span class='menu-link'>
+                        Company
+                    </span>
+                    <small>
+                        <i class="fa fa-chevron-right"></i>
+                    </small>
+                </li>
+                <li>
+                    <a href='' class="menu-link">
+                        Account
+                    </a>
+                    <small>
+                        <i class="fa fa-chevron-right"></i>
+                    </small>
+                </li>
+            </ul>
+        </div>
+    {% endblock menu%}
+
     {% block social-icons %}
         <div class="social-media" data-aos="zoom-in" >
             <ul>
                 <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=61561500103159"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61561500103159/"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </div>
     {% endblock social-icons%}
@@ -14,7 +57,7 @@
             <div class="container">
                 <section class="home-page d-flex justify-content-center align-items-center" data-pages="home">
                     <div class="container">
-                        <div class="content d-flex flex-column justify-content-center align-items-center">
+                        <div class="content d-flex flex-column justify-content-center align-items-center js-tilt">
                             <h1 class="text-center">Digital Touch</h1>
                             <small class="text-center">Turning <span class='font-weight-bold'>Ideas</span> Into Digital Space</small>
                         </div>
@@ -23,57 +66,10 @@
             </div>
         </div>
     {% endblock hero%}
-        <section id="products" class="products-page bg-dark text-light" data-page="home">
-            <div class="container">
-                <div class="content d-flex flex-column py-3" data-aos="fade-right">
-                    <div class="title h3 py-3 text-center">Produts & Services</div>
-                    <div class="row">
-                        <div class="col" >
-                            <a href="#soft">
-                                <div class="card " data-page="soft">
-                                        <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
-                                            <i class="bi bi-code py-2"></i>
-                                            <h4 class="text-center">Software Development</h4>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col py-3">
-                            <a href="#mob">
-                                <div class="card" data-page="mob">
-                                    <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
-                                        <i class="bi bi-phone code py-2"></i>
-                                        <h4 class="text-center">Mobile Application Development</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="#web">
-                                <div class="card" data-page="web">
-                                        <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
-                                            <i class="bi bi-code  code py-2"></i>
-                                            <h4 class="text-center">Web Development</h4>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row py-3">
-                        <div class="col" >
-                            <a href="#marketing">
-                                <div class="card " data-page="marketing">
-                                        <div class="card-body  d-flex flex-column justify-content-center align-items-center py-5">
-                                            <i class="bi bi-code py-2"></i>
-                                            <h4 class="text-center">Digital Marketing And Hosting Services</h4>
-                                        </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- onclick data -->
+    {% block main%}
+         <section id="products" class="products-page bg-dark text-light" data-page="home">
+            <div class="container">
                 <!-- software development data -->
                 <div id="soft" data-aos="fade-down" class="py-3">
                     <div class="container">
@@ -111,8 +107,8 @@
                                 <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Mobile application">Get A Qoute</a>
                                 <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>
                             </div>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <!-- web devvelopment -->
@@ -158,8 +154,6 @@
                     </div>
                 </div> 
             </div>
-    </section>
-    {% block main%}
-
+        </section>
     {% endblock main%}
 {% endblock content%}

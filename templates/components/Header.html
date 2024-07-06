@@ -1,13 +1,13 @@
 {% load static %}
 {% block content %}
-    <nav data-aos="zoom-in" class="fill d-flex fixed-top align-items-center w-100">
+    <nav data-aos="zoom-in" class="fill d-flex fixed-top align-items-center w-100" id="navbar">
         <div class="site-logo w-25 mt-2">
             <ul class='list-unstyled d-flex '>
                 <li>
-                    <a href='' aria-label='digital touch logo'>
-                    <img src="{% static 'images/icons/logo-no-back.png'%}" alt="logo">
+                    <a href='/' aria-label='digital touch logo'>
+                        <img src="{% static 'images/icons/logo-no-back.png'%}" alt="logo">
+                    </a>
                 </li>
-            </a>
             </ul>
         </div>
         <div class="center-navigation text-center mt-2 w-50">
@@ -48,9 +48,9 @@
                 </li>
             </ul>
         </div>
-        <div class='w-75 menu px-2'>
+        <div class='w-75 menu px-2' id="menu">
             <button class='nav-btn fw-bold mb-1'>
-                <span class='font-weight-bold'>Menu</span>
+                <span class='font-weight-bold' id="menuBtn">Menu</span>
             </button>
         </div>
     </nav>

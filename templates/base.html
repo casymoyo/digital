@@ -36,9 +36,35 @@
     <script src="{% static 'vendor/lightbox/js/lightbox.min.js'%}"></script>
 <!--===============================================================================================-->
     <script src="{% static 'vendor/aos/aos.js'%}"></script>
+    <script src="{% static 'vendor/tilt/tilt.jquery.min.js' %}"></script>
 
-<script>
+    <script>
         AOS.init({ duration: 1200 });
+        $('.js-tilt').tilt({
+                scale: 1.1
+        })
+        
+        const navbarEl = document.getElementById('navbar');
+        const menuEl = document.getElementById('menu');
+        const menuBtn = document.getElementById('menuBtn');
+
+        const responsiveEl = document.getElementById('responsive');
+        const responsiveBtn = document.getElementById('close-btn');
+
+        responsiveBtn.addEventListener('click', ()=>{
+            responsiveEl.classList.add('hidden')
+            navbarEl.classList.remove('d-none')
+            navbarEl.classList.add('d-flex')
+        })
+
+        menuBtn.addEventListener('click', ()=>{
+            if(navbarEl.classList.contains('d-flex')){
+                navbarEl.classList.remove('d-flex')
+                navbarEl.classList.add('d-none')
+                responsiveEl.classList.remove('hidden')
+            }
+        })
+
     </script>
 </body>
 </html>
