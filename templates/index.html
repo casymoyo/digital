@@ -70,6 +70,7 @@
     {% block main%}
          <section id="products" class="products-page bg-dark text-light" data-page="home">
             <div class="container">
+                <div class="h3 title py-3">Our Products & Services</div>
                 <!-- software development data -->
                 <div id="soft" data-aos="fade-down" class="py-3">
                     <div class="container">
@@ -105,7 +106,7 @@
                             </div>
                             <div class="py-5 text-center">
                                 <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Mobile application">Get A Qoute</a>
-                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>
+                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Get to know more</a>
                             </div>
                         </div>
                     </div>
@@ -127,32 +128,49 @@
                                 </div>
                             </div>
                             <div class="py-5 text-center">
-                                    <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Web Application or Site">Get A Qoute</a>
-                                    <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>    
+                                    <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Web Application or Site">Get to know more</a>  
                                 </div>
                         </div>
                     </div>
                 </div>  
 
-                <!-- digital maarketing data -->
+                <!-- Networking -->
                 <div id="marketing" data-aos="fade-right" class="py-3">
                     <div class="container">
                         <div class="h3 text-center py-3">
-                            <i class="bi bi-code"></i>Digital Markerting
+                            <i class="bi bi-code"></i>Networking
                         </div>
                         <div class="card bg-dark text-light">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <div class="card-text">
-                                    digital Marketing
+                                    Networking
                                 </div>
                             </div>
                             <div class="py-5 text-center">
                                 <a href="#mod" class="btn btn-secondary qoute" type="button" data-product="Web Application or Site">Get A Qoute</a>
-                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Product Menu</a>    
+                                <a href="#products" class="btn btn-light"><i class="bi bi-arrow-up"></i>Get to know more</a>    
                             </div> 
                         </div>
                     </div>
                 </div> 
+            </div>
+        </section>
+
+        <section class="portifolio" data-aos="fade-right">
+            <div class="container">
+                <div class="h3 title py-3">Our Portifolio</div>
+                <div class="content">
+                    <div class="row">
+                        {% for portifolio in portifolios %}
+                        <div class="col d-flex flex-column align-items-center mb-4">
+                            <a href="{{ portifolio.image.image.url }}" data-lightbox="image-1" data-title="{{ portifolio.name }}">
+                                <img src="{{ portifolio.image.image.url }}" alt="{{ portifolio.name }}">
+                            </a>
+                            <a href="{{ portifolio.url }}">{{ portifolio.name }}</a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </section>
     {% endblock main%}
